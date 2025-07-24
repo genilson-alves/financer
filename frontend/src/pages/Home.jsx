@@ -9,9 +9,10 @@ function Home() {
     { name: "Amazon.com, Inc.", ticker: "AMZN" },
   ];
   return (
-    <div>
+    <div className="flex-grow p-4">
       <h1>Finance Dashboard</h1>
       <h2>Popular Stocks</h2>
+      <button className="btn btn-primary mb-8">Get Started</button>
       <ul>
         {stocks.map((stock) => (
           <li key={stocks.ticker}>
